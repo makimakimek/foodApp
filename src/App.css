@@ -1,0 +1,130 @@
+.page {
+    background-color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffefd1;
+    padding-top: 30px;
+    position: fixed;
+    width: 100%;
+}
+
+.header > div > button {
+    padding: 18px 30px;
+}
+
+.companyButton {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.faqButton, .blogButton {
+    border-radius: 0px;
+}
+
+.contactButton {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.appNameButton {
+    background-color: #0C513F;
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.customersButton {
+    border-radius: 30px 30px 30px 30px;
+}
+
+.landingPageSlogan {
+    display: flex;
+    align-items: flex-end;
+    background-color: #ffefd1;
+    justify-content: center;
+    min-height: 300px;
+    font-size: 100px;
+    color: black;
+    font-weight: bold;
+}
+
+.appStoreButtons {
+    display: flex;
+    justify-content: center;
+    background-color: #ffefd1;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.appStoreButtons > button {
+    color: white;
+    background-color: #0C513F;
+    padding: 18px 30px;
+}
+
+.threeToggle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 40px 0;
+    background-color: white;   
+}
+  
+.switch {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 48px;
+    width: 332px;
+    background: #FFF3CC;
+    border-radius: 32px;
+}
+
+.switch-label {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 110px;
+    line-height: 32px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.switch-input {
+    display: none;
+}
+  
+.switch-input:checked + .switch-label {
+    transition: 0.15s ease-out;
+    transition-property: color, text-shadow;
+}
+  
+.switch-input:checked + .switch-label-y ~ .switch-selector {
+    transform: translateX(0%);
+    background-color: #FFC501;
+}
+.switch-input:checked + .switch-label-i ~ .switch-selector {
+    transform: translateX(100%);
+    background-color: #FFC501;
+}
+
+.switch-input:checked + .switch-label-n ~ .switch-selector {
+    transform: translateX(200%);
+    background-color: #FFC501;
+}
+    
+.switch-selector {
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    left: 4px;
+    display: block;
+    width: 108px;
+    height: 40px;
+    border-radius: 32px;
+    transition: all 0.3s;
+}
