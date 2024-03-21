@@ -55,7 +55,7 @@
     justify-content: center;
     background-color: #ffefd1;
     gap: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
 }
 
 .appStoreButtons > button {
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding: 40px 0;
+    padding-top: 40px;
     background-color: white;   
 }
   
@@ -107,9 +107,11 @@
     transform: translateX(0%);
     background-color: #FFC501;
 }
+
 .switch-input:checked + .switch-label-i ~ .switch-selector {
     transform: translateX(100%);
     background-color: #FFC501;
+
 }
 
 .switch-input:checked + .switch-label-n ~ .switch-selector {
@@ -127,4 +129,27 @@
     height: 40px;
     border-radius: 32px;
     transition: all 0.3s;
+}
+
+.wholeThing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.paragraph {
+    width: 100%; 
+    max-width: 60vw;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 14px;
 }

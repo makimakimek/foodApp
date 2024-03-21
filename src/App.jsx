@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import './App.css'
 
 function App() {
+  const [selectedOption, setSelectedOption] = useState('customer');
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
 
   return (
     <>
@@ -36,18 +41,45 @@ function App() {
 
         <div className = "threeToggle">
           <div class="switch">
-            <input id="switch-y" name="tripple" type="radio" value="Y" class="switch-input" checked/>
-            <label for="switch-y" class="switch-label switch-label-y">Customer</label>
+            <input id="switch-y" name="tripple" type="radio" value="customer" className = "switch-input" checked = {selectedOption === 'customer'} onChange = {handleOptionChange}/>
+            <label for="switch-y" className = "switch-label switch-label-y">Customer</label>
+            
+            <input id="switch-i" name="tripple" type="radio" value="vendor" className = "switch-input" checked = {selectedOption === 'vendor'} onChange = {handleOptionChange}/>
+            <label for="switch-i" className = "switch-label switch-label-i">Vendors</label>
         
-            <input id="switch-i" name="tripple" type="radio" value="I" class="switch-input" />
-            <label for="switch-i" class="switch-label switch-label-i">Vendors</label>
+            <input id="switch-n" name="tripple" type="radio" value="rider" className = "switch-input" checked = {selectedOption === 'rider'} onChange = {handleOptionChange}/>
+            <label for="switch-n" className = "switch-label switch-label-n">Riders</label>
         
-            <input id="switch-n" name="tripple" type="radio" value="N" class="switch-input" />
-            <label for="switch-n" class="switch-label switch-label-n">Riders</label>
-        
-            <span class="switch-selector"></span>
+            <div class="switch-selector"></div>
           </div>
         </div>
+
+        <div className = "toggleText">
+          {selectedOption === 'customer' && 
+          (<div className = "wholeThing">
+            <div className = "title">Try the App</div>
+            <div className = "paragraph">Have meals delivered to you within minutes from a wide variety of restaurants ranging from African to Continental cuisines to satisfy your cravings.</div>
+            </div>
+            )
+          }
+
+          {selectedOption === 'vendor' && 
+          (<div className = "wholeThing">
+            <div className = "title">All in One</div>
+            <div className = "paragraph">Unlock new levels of growth with seamless menu and orders management, multiple branches and team, easy payouts withdrawal and a lot more.</div>
+            </div>
+            )
+          }
+
+          {selectedOption === 'rider' &&
+          (<div className = "wholeThing">
+            <div className = "title">Become a Champ</div>
+            <div className = "paragraph">Choose your own working hours, ride your choice of bike, track your metrics, earn bonuses and withdraw easily to your account. Do more with our app.</div>
+            </div>
+            )
+          }
+        </div>
+
       </div>
     </>
   )
