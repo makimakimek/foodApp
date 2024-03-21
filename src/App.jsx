@@ -80,6 +80,83 @@ function App() {
           }
         </div>
 
+        <div className = "phoneAppPhoto">
+
+        </div>
+
+        <div className = "networkContainer">
+          <div className = "networkTitle">
+            Join our growing network:
+          </div>
+
+          <div className = "networkSections">
+            <div className = "networkSection">
+              <div className = "networkIcon">
+
+              </div>
+
+              <div className = "networkTitle">
+
+              </div>
+
+              <div className = "networkParagraph">
+
+              </div>
+
+              <div className = "networkSeeMore">
+
+              </div>
+
+              <div className = "networkImage">
+                
+              </div>
+            </div>
+
+            <div className = "networkSection">
+              <div className = "networkIcon">
+
+              </div>
+
+              <div className = "networkTitle">
+
+              </div>
+
+              <div className = "networkParagraph">
+
+              </div>
+
+              <div className = "networkSeeMore">
+
+              </div>
+
+              <div className = "networkImage">
+  
+              </div>
+            </div>
+
+            <div className = "networkSection">
+              <div className = "networkIcon">
+
+              </div>
+
+              <div className = "networkTitle">
+
+              </div>
+
+              <div className = "networkParagraph">
+
+              </div>
+
+              <div className = "networkSeeMore">
+
+              </div>
+
+              <div className = "networkImage">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

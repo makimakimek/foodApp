@@ -1,5 +1,5 @@
 .page {
-    background-color: white;
+    background-color: ffefd1;
     min-height: 100vh;
     min-width: 100vw;
 }
@@ -7,10 +7,10 @@
 .header {
     display: flex;
     justify-content: space-evenly;
-    background-color: #ffefd1;
     padding-top: 30px;
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 .header > div > button {
@@ -138,18 +138,24 @@
     justify-content: center;
     color: black;
     padding-top: 20px;
-    gap: 20px;
+    gap: 5px;
 }
 
 .title {
     font-weight: bold;
-    font-size: 34px;
+    font-size: 60px;
 }
 
 .paragraph {
     width: 100%; 
-    max-width: 60vw;
+    max-width: 30vw;
     word-wrap: break-word;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
 }
+
+.phoneAppPhoto {
+    height: 1000px;
+}
+
+/*/////////////////////network section //////////////////////////////*/
