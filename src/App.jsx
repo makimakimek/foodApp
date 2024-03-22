@@ -95,16 +95,16 @@ function App() {
 
               </div>
 
-              <div className = "networkTitle">
-
+              <div className = "networkTitle2">
+                Start selling
               </div>
 
               <div className = "networkParagraph">
-
+                Are you a restaurant owner looking to grow your business? Reach new customers when you join our network.
               </div>
 
               <div className = "networkSeeMore">
-
+                SEE MORE
               </div>
 
               <div className = "networkImage">
@@ -117,16 +117,16 @@ function App() {
 
               </div>
 
-              <div className = "networkTitle">
-
+              <div className = "networkTitle2">
+                Deliver happiness
               </div>
 
               <div className = "networkParagraph">
-
+                Join our elite league of delivery riders delivering happiness to customers and earn to achieve your dreams while at it.
               </div>
 
               <div className = "networkSeeMore">
-
+                SEE MORE
               </div>
 
               <div className = "networkImage">
@@ -139,16 +139,16 @@ function App() {
 
               </div>
 
-              <div className = "networkTitle">
-
+              <div className = "networkTitle2">
+                Behind the scenes
               </div>
 
               <div className = "networkParagraph">
-
+                If you are passionate about helping us achieve our goal to deliver meals seamlessly, come join the team.
               </div>
 
               <div className = "networkSeeMore">
-
+                SEE MORE
               </div>
 
               <div className = "networkImage">
