@@ -158,12 +158,22 @@
     height: 500px;
 }
 
+.appScreenshot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 20vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 /*/////////////////////network section //////////////////////////////*/
 .networkContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
     gap: 30px;
 }
 
@@ -181,15 +191,15 @@
 .networkSection {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     border: black 3px solid;
     border-radius: 30px;
-    padding: 0px 30px 0px 30px;;
 }
 
 .networkTitle2 {
     font-size: 20px;
     font-weight: bold;
+    padding: 0px 30px 0px 30px;
 }
 
 .networkParagraph {
@@ -197,8 +207,30 @@
     max-width: 18vw;
     word-wrap: break-word;
     font-size: 16px;
+    padding: 0px 30px 0px 30px;
 }
 
 .networkSeeMore {
     font-weight: bold;
+    padding: 0px 30px 0px 30px;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.networkImage { 
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0px 0px 27px 27px;
+    border-top: 3px black solid;
+}
+
+/*//////////////slideshow section//////////////////////////*/
+
+.slideshowContainer {
+    height: 200px;
 }

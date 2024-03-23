@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './App.css'
+import appScreenshot3 from './assets/appScreenshot3.png'
+import pancakes from './assets/cherrypancakes.png'
+import sushi from './assets/sushi.png'
+import fiveRoll from './assets/fiveRoll.png'
+import threeRoll from './assets/threeRoll.png'
 
 function App() {
   const [selectedOption, setSelectedOption] = useState('customer');
@@ -59,6 +64,9 @@ function App() {
           (<div className = "wholeThing">
             <div className = "title">Try the App</div>
             <div className = "paragraph">Have meals delivered to you within minutes from a wide variety of restaurants ranging from African to Continental cuisines to satisfy your cravings.</div>
+            <div>
+              <img src = {appScreenshot3} className = "appScreenshot" alt = "screenshot of the food app"></img>
+            </div>
             </div>
             )
           }
@@ -67,6 +75,9 @@ function App() {
           (<div className = "wholeThing">
             <div className = "title">All in One</div>
             <div className = "paragraph">Unlock new levels of growth with seamless menu and orders management, multiple branches and team, easy payouts withdrawal and a lot more.</div>
+            <div>
+              <img src = {appScreenshot3} className = "appScreenshot" alt = "screenshot of the food app"></img>
+            </div>
             </div>
             )
           }
@@ -75,13 +86,12 @@ function App() {
           (<div className = "wholeThing">
             <div className = "title">Become a Champ</div>
             <div className = "paragraph">Choose your own working hours, ride your choice of bike, track your metrics, earn bonuses and withdraw easily to your account. Do more with our app.</div>
+            <div>
+              <img src = {appScreenshot3} className = "appScreenshot" alt = "screenshot of the food app"></img>
+            </div>
             </div>
             )
           }
-        </div>
-
-        <div className = "phoneAppPhoto">
-
         </div>
 
         <div className = "networkContainer">
@@ -107,8 +117,8 @@ function App() {
                 SEE MORE
               </div>
 
-              <div className = "networkImage">
-                
+              <div className = "imageContainer">
+                <img src = {threeRoll} className = "networkImage"></img>
               </div>
             </div>
 
@@ -129,8 +139,8 @@ function App() {
                 SEE MORE
               </div>
 
-              <div className = "networkImage">
-  
+              <div className = "imageContainer">
+                <img src = {threeRoll} className = "networkImage"></img>
               </div>
             </div>
 
@@ -151,11 +161,15 @@ function App() {
                 SEE MORE
               </div>
 
-              <div className = "networkImage">
-                
+              <div className = "imageContainer">
+                <img src = {threeRoll} className = "networkImage"></img>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className = "slideshowContainer">
+
         </div>
       </div>
     </>
