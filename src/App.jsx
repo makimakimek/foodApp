@@ -169,7 +169,17 @@ function App() {
         </div>
 
         <div className = "slideshowContainer">
+          
+        </div>
 
+        <div className = "underSlideshow">
+          <div className = "slogan">
+            DishDash has you covered
+          </div>
+          <div className = "sloganParagraph">
+            Hungry? Too tired to cook? Have friends over, or do you simply need to dish life?
+            Download DishDash, and let's deliver happiness to your doorstep in minutes.
+          </div>
         </div>
       </div>
     </>
